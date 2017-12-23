@@ -6,17 +6,21 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 import {routing} from "./app.routes";
+import { FrameworkBodyComponent } from './fw/framework-body/framework-body.component';
+import { FrameworkContentComponent } from './fw/framework-content/framework-content.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserComponent
+    UserComponent,
+    FrameworkBodyComponent,
+    FrameworkContentComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
-    routing
+    HttpModule
+    //routing
   ],
   providers: [],
   bootstrap: [AppComponent]
